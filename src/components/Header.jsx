@@ -1,13 +1,16 @@
 import { useState } from "react";
+import Hero from "./Hero.jsx";
+import headerBac from '../assets/Header-background.webp'
+
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <>
-      <div className="w-full bg-transparent fixed z-30  py-4 px-6 flex items-center justify-between">
+    <><div className="bg-cover bg-center md:p-5 xl:px-10 2xl:px-60" style={{backgroundImage: `url(${headerBac})`}}>
+      <div className="w-full bg-transparent sticky top-0 z-30  py-4 px-6 flex items-center justify-between">
         <div className={`${menuOpen ? 'text-black' : 'text-black'} text-3xl font-bold`}>
-          Robot<span className="text-amber-600">Human</span>
+          <span className="font-bitcount text-4xl">Robot</span><span className="text-amber-600">Human</span>
         </div>
         {/* Navigation */}
         <nav className="hidden md:flex gap-6">
@@ -49,7 +52,7 @@ const Header = () => {
       </div>
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 w-full h-full bg-white/70 backdrop-blur-lg flex flex-col items-center justify-center gap-8 transition-all duration-300 z-20 ${
+        className={`fixed top-0 left-0 w-full h-full bg-white/70 backdrop-blur-xl flex flex-col items-center justify-center gap-8 transition-all duration-300 z-20 ${
           menuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -78,14 +81,8 @@ const Header = () => {
           Contact
         </a>
       </div>
-      <div className="relative h-48 w-3/4 rounded-full blur-3xl opacity-80 bg-amber-600/40 top-16 left-56">
-            {/* orange mark */}
-      </div>
-      <div>
-        <div className="flex gap-3 ml-12 w-max bg-orange-300/40 px-3 py-1 border-orange-500 border rounded-2xl">
-            <span className="bg-orange-500 rounded-full px-1 text-white">01</span><p className="text-orange-400">Purpose</p> 
-        </div>
-      </div>
+       <Hero/>
+    </div>
     </>
   );
 };
