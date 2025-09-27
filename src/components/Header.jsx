@@ -7,7 +7,10 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <><div className="bg-cover bg-center md:p-5 xl:px-10 2xl:px-60" style={{backgroundImage: `url(${headerBac})`}}>
+    <><div className="bg-cover bg-center md:p-5 xl:px-10 " style={{backgroundImage: `url(${headerBac})`}}>
+      <div className="2xl:max-w-[1500px] 2xl:mx-auto">
+
+
       <div className="w-full bg-transparent sticky top-0 z-30  py-4 px-6 flex items-center justify-between">
         <div className={`${menuOpen ? 'text-black' : 'text-black'} text-3xl font-bold`}>
           <span className="font-bitcount text-4xl">Robot</span><span className="text-amber-600">Human</span>
@@ -82,6 +85,7 @@ const Header = () => {
         </a>
       </div>
        <Hero/>
+      </div>
     </div>
     </>
   );

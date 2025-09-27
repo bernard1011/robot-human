@@ -17,14 +17,14 @@ const Hero = () => {
       </div> */}
       <div className='flex flex-col gap-5 md:gap-10 lg:gap-7'>
 
-      <Purpose num={'1'} word={'Purpose'}/>
+      <Purpose num={'01'} word={'Purpose'}/>
       <h2 className="text-3xl/10 md:text-3xl/8 lg:text-4xl xl:text-5xl font-semibold md:font-bold md:w-1/3 lg:w-4/5 ">
         Atlas: Where Code Meets Motion
       </h2>
       <p className="text-lg">
         The humanoid companion that learns and adapts alongside you.{" "}
       </p>
-      <button className="flex items-center gap-2 bg-orange-500 rounded-3xl p-3 justify-center md:w-max md:px-5 text-white ">
+      <button className="flex items-center gap-2 bg-orange-500 rounded-3xl p-3 justify-center md:w-max md:px-5 text-white border border-white">
         Request Acces <ArrowRight className="w-4 h-4" />
       </button>
       </div>
