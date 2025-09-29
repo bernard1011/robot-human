@@ -5,6 +5,9 @@
   --font-bitcount: "Bitcount Prop Single", "system-ui";
 }
 
+body {
+  background-color: rgb(250, 250, 250);
+}
 
 
 /* :root {

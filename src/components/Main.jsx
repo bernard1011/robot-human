@@ -1,9 +1,11 @@
 import HumanoidSection from "./HumanoidSection";
+import Specs from "./Specs";
 
 const Main = () => {
   return <>
-    <div className="md:p-5 xl:px-10 2xl:mx-auto 2xl:max-w-[1500px] mt-28">
+    <div className="mx-6 xl:px-10 xl:mx-auto xl:max-w-[1400px] mt-28 flex flex-col gap-5">
       <HumanoidSection/>
+      <Specs />
     </div>
   </>;
 };

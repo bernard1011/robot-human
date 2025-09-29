@@ -10,7 +10,7 @@ const Hero = () => {
       {/* orange mark */}
     </div>
 
-    <div className="mx-6 my-10 flex flex-col lg:flex-row gap-5 md:gap-10 lg:items-center xl:justify-between">
+    <div className="mx-6 md:mx-0 my-10 flex flex-col lg:flex-row gap-5 md:gap-10 lg:items-center xl:justify-between">
       {/* <div className="flex gap-3 w-max bg-orange-300/40 px-3 py-1 border-orange-500 border rounded-2xl">
         <span className="bg-orange-500 rounded-full px-1 text-white">01</span>
         <p className="text-orange-400">Purpose</p>
@@ -31,7 +31,7 @@ const Hero = () => {
       <img
         src={robotFirst}
         alt="Robot First"
-        className="rounded-3xl shadow-2xl lg:w-1/2 xl:w-2xl"
+        className="rounded-3xl shadow-xl lg:w-1/2 xl:w-2xl"
       />
     </div>
   </>
