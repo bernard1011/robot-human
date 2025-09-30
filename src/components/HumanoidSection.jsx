@@ -1,5 +1,5 @@
 import Purpose from "./Purpose";
-import {motion, stagger} from "framer-motion";
+import {motion} from "framer-motion";
 import HumanoidCard from "./HumanoidCard";
 import bgSection1 from "../assets/background-section1.png"
 import bgSection2 from "../assets/background-section2.png"
@@ -37,7 +37,7 @@ const HumanoidSection = ()=> {
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{once: true, amount: 0.5}}>
+                viewport={{once: true, amount: 0.25}}>
                     {cardsData.map(item=>(
                         <HumanoidCard key={item.id} item={item} />
                     ))}
