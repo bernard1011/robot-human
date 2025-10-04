@@ -1,6 +1,7 @@
 import HumanoidSection from "./HumanoidSection";
 import Specs from "./Specs";
 import Features from "./Features";
+import Testimonials from "./Testimonials";
 
 
 const Main = () => {
@@ -14,6 +15,9 @@ const Main = () => {
           <Features/>
       </div>
     </section>
+    <div className="mx-6 xl:px-10 xl:mx-auto xl:max-w-[1400px] mt-9 lg:mb-16">
+          <Testimonials />
+    </div>
   </>;
 };
 
