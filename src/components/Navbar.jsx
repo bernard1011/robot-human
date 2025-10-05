@@ -45,11 +45,11 @@ const Navbar = () => {
           <div
             className={`${
               menuOpen ? "text-black" : "text-black"
-            } text-3xl md:font-bold`}
+            } text-3xl `}
           >
             <a href="#">
             <span className="font-bitcount text-4xl">Robot</span>
-            <span className="text-amber-600">Human</span>
+            <span className="text-amber-600 font-bold">Human</span>
             </a>
           </div>
           {/* Navigation */}
