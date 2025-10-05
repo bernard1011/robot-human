@@ -27,8 +27,10 @@ const Navbar = () => {
 
   return (
     <>
-      <div
-        id="nav"
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
         className={` sticky top-0 z-30  transition-colors duration-300 ${
           menuOpen
             ? "bg-transparent"
@@ -43,20 +45,22 @@ const Navbar = () => {
           <div
             className={`${
               menuOpen ? "text-black" : "text-black"
-            } text-3xl font-bold`}
+            } text-3xl md:font-bold`}
           >
+            <a href="#">
             <span className="font-bitcount text-4xl">Robot</span>
             <span className="text-amber-600">Human</span>
+            </a>
           </div>
           {/* Navigation */}
           <nav className="hidden md:flex gap-6">
             <a href="#" className="text-black hover:text-amber-600 transition">
               Home
             </a>
-            <a href="#" className="text-black hover:text-amber-600 transition">
+            <a href="#about" className="text-black hover:text-amber-600 transition">
               About
             </a>
-            <a href="#" className="text-black hover:text-amber-600 transition">
+            <a href="#contact" className="text-black hover:text-amber-600 transition">
               Contact
             </a>
           </nav>
@@ -86,7 +90,7 @@ const Navbar = () => {
             </div>
           </button>
         </div>
-      </div>
+      </motion.div>
       {/* Mobile Menu */}
       <div
         className={`fixed top-0 left-0 w-full h-full bg-white/50 backdrop-blur-xl flex flex-col items-center justify-center gap-8 transition-all duration-300 z-20 ${
@@ -103,14 +107,14 @@ const Navbar = () => {
           Home
         </a>
         <a
-          href="#"
+          href="#about"
           className={`text-black text-2xl hover:text-amber-600 transition`}
           onClick={() => setMenuOpen(false)}
         >
           About
         </a>
         <a
-          href="#"
+          href="#contact"
           className={`text-black text-2xl hover:text-amber-600 transition`}
           onClick={() => setMenuOpen(false)}
         >

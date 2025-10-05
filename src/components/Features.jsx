@@ -55,8 +55,8 @@ const cardsData = [
 const Features = () => {
   return (
     <>
-      <article className="flex flex-col gap-5 lg:gap-7 lg:mb-7 items-center text-center">
-        <Purpose num={""} word={"Features"} />
+      <article className="flex flex-col gap-5 lg:gap-7 lg:mb-7 items-center text-center" >
+        <Purpose num={""} word={"Features"}/>
         <h2 className="text-2xl font-bold lg:text-3xl">
           Advanced Intelligence, Human-Like Intuition
         </h2>

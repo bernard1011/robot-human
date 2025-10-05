@@ -5,6 +5,7 @@ import cardTwo from "../assets/background-section1.png";
 import thirdImg from "../assets/sectionThree.jpg";
 import { header } from "framer-motion/client";
 import { CircleCheck } from "lucide-react";
+import {motion} from "framer-motion"
 
 const Specs = () => {
   return (
@@ -72,7 +73,7 @@ const Specs = () => {
             </ul>
           </div>
         </article>
-        <aside className="shadow-lg rounded-2xl overflow-hidden md:h-[536px] md:w-full">
+        <aside className="shadow-lg rounded-2xl overflow-hidden md:h-[536px] md:w-full" id="request">
           <header
             style={{ backgroundImage: `url(${cardTwo})` }}
             className=" h-48 bg-cover bg-bottom flex flex-col justify-between items-start p-4"
@@ -84,7 +85,7 @@ const Specs = () => {
               See it for yourself
             </h3>
           </header>
-          <form className="p-5 flex flex-col gap-5">
+          <form className="p-5 flex flex-col gap-5" >
             <input
               id="name"
               name="name"
@@ -108,17 +109,21 @@ const Specs = () => {
               placeholder="Company (optional)"
               className="border border-gray-300 rounded-xl p-3 focus:outline-gray-400"
             />
-            <button
+            <motion.button
+              whileHover={{ scale: 1.01, boxShadow: "0px 0px 15px #FFAC1C" }}
+              whileTap={{ scale: 0.95 }}
               type="submit"
               className="bg-orange-500 p-3 rounded-3xl text-gray-100 active:bg-orange-600"
             >
               Request access
-            </button>
+            </motion.button>
           </form>
         </aside>
       </section>
       <section className="flex flex-col gap-5 mt-5 items-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-center">Experience the Future Today</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-center">
+          Experience the Future Today
+        </h2>
         <p className="text-gray-600 text-center md:text-lg">
           Our cutting-edge humanoid robot is designed to transform how we
           interact with technology in everyday environments.
@@ -126,12 +131,12 @@ const Specs = () => {
         <article className="shadow-lg rounded-2xl overflow-hidden mb-10 max-w-[900px]">
           <img src={thirdImg} alt="robot" className="w-full" />
           <div className="px-5 py-3 flex flex-col gap-3">
-          <h3 className="text-xl font-bold">Next Generation Robotics</h3>
-          <p className="text-gray-600 md:text-lg">
-            Built with precision engineering and sophisticated AI, our robots
-            seamlessly integrate into various environments, from homes to
-            hospitals, providing assistance and enriching human experiences.
-          </p>
+            <h3 className="text-xl font-bold">Next Generation Robotics</h3>
+            <p className="text-gray-600 md:text-lg">
+              Built with precision engineering and sophisticated AI, our robots
+              seamlessly integrate into various environments, from homes to
+              hospitals, providing assistance and enriching human experiences.
+            </p>
           </div>
         </article>
       </section>
